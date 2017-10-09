@@ -15,7 +15,7 @@
         <div class="left_header">
             <div class="left_header_top">
                 <p><span class="icons_back"></span></p>
-                <p class='orders_quantity'>Orders(10)</p>
+                <p class='orders_quantity'>Orders(0)</p>
             </div>
             <div class="left_header_bottom">
 
@@ -35,6 +35,7 @@
             </div>
         </div>
         <div class="left_footer">
+            <span class="icons_add_order" onclick="toAddOrderClick()" title="Add Order"></span>
             <span class="icons_filter"></span>           
             <span class="icons_select"></span>
         </div>
@@ -47,20 +48,15 @@
             </div>
             <div class="right_bck_section">
                 <div class="right_bck_section_top">
-                    <div class="right_bck_section_top_left">
-                        <p class="order_id">Order -</p>
-                        <p class = "customer">Customer: -</p>
-                        <p class = "createdAt">Ordered: -</p>
-                        <p class = "shippedAt">Shipped: -</p>
-                    </div>
-                    <div class="right_bck_section_top_right">
-                        <p class='total_price'>0</p>
-                        <p>EUR</p>
-                    </div>
+
                 </div>
                 <div class="right_bck_section_middle">
                     <div class="tools active">
-                        <span class="icons_car" title='Ship To'></span>
+                        <span class="icons_car" title='Shipping Info'></span>
+                        <span class="icons_line"></span>
+                    </div>
+                    <div class="tools">
+                        <span class="icons_map" title='Location'></span>
                         <span class="icons_line"></span>
                     </div>
                     <div class="tools">
@@ -69,7 +65,7 @@
                     </div>
                 </div>
                 <div class="right_bck_section_shipping">
-                    <p>Shipping address</p>
+
                     <div class='detail-info'>
                         
                     </div>
@@ -81,7 +77,9 @@
                         <form>
                     		<input type='text' name='search' id='t_input' onkeyup="tableSearch()" placeholder='Search' size='35'>
                			</form>
+                            <span class='icons_add_product' onclick="toAddProductClick()" title="Add Product"></span>
                     	</div>
+
                         <table id='product_table'>
                             <thead>
 	                            <tr class='thead'>
@@ -89,6 +87,7 @@
 	                                <th class='right-align' onclick="sortTable(1)">Unit Price <span class='triangle'></span></th>
 	                                <th class='right-align' onclick="sortTable(2)">Quantity <span class='triangle'></span></th>
 	                                <th class='right-align' onclick="sortTable(3)">Total <span class='triangle'></span></th>
+                                    <th class='remove_cell'></th>
 	                            </tr>
 	                        </thead>
                             <tbody>
@@ -99,11 +98,30 @@
                 </div>
             </div>
             <div class="right_bck_footer">
+                <span class="icons_remove_order" onclick="toDeleteOrderClick()" title="Remove Order"></span>
                 <span class="icons_share"></span>
             </div>
         </div>
 
     </div>
+</div>
+
+<!--modal window-->
+<div id="myModal" class="modal hidden">
+
+    <!-- Modal content -->
+    <div class="modal_content">
+        <div class="modal_header">
+            <span class="close">&times;</span>
+            <p></p>
+        </div>
+        <div class="modal_body">
+
+        </div>
+        <div class="modal_footer">
+        </div>
+    </div>
+
 </div>
 
 <script type="text/javascript" src="js/data.js"></script>
