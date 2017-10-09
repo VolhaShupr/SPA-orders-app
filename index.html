@@ -20,7 +20,7 @@
             <div class="left_header_bottom">
 
                 <form>
-                    <input type='text' name='search' id='li_input' onkeyup="liSearch()" placeholder='Search'>
+                    <input type='text' name='search' id='li_input' placeholder='Search'>
                     <input type="button" name="icons_search" id='li_search'>
                     <input type="button" name="icons_refresh" id='li_refresh' title='Refresh'>
                 </form>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="left_footer">
-            <span class="icons_add_order" onclick="toAddOrderClick()" title="Add Order"></span>
+            <span class="icons_add_order" id='add_order' title="Add Order"></span>
             <span class="icons_filter"></span>           
             <span class="icons_select"></span>
         </div>
@@ -65,9 +65,14 @@
                     </div>
                 </div>
                 <div class="right_bck_section_shipping">
-
+                    <div class = 'tool_title'>
+                        <p></p>
+                        <span class="icons_edit" title="Edit"></span>
+                        <span class="icons_save hidden" title="Save"></span>
+                        <span class="icons_cancel hidden" title="Cancel"></span>
+                    </div>
                     <div class='detail-info'>
-                        
+
                     </div>
                 </div>
                 <div class="right_bck_section_table">
@@ -75,18 +80,18 @@
                         <p class='tname font-mid'> Line Items (0)</p>
                         <div class='tsearch'>
                         <form>
-                    		<input type='text' name='search' id='t_input' onkeyup="tableSearch()" placeholder='Search' size='35'>
+                    		<input type='text' name='search' id='t_input' placeholder='Search' size='35'>
                			</form>
-                            <span class='icons_add_product' onclick="toAddProductClick()" title="Add Product"></span>
+                            <span class='icons_add_product' id="add_product" title="Add Product"></span>
                     	</div>
 
                         <table id='product_table'>
                             <thead>
 	                            <tr class='thead'>
-	                                <th class='left-align' onclick="sortTable(0)">Product <span class='triangle'></span></th>
-	                                <th class='right-align' onclick="sortTable(1)">Unit Price <span class='triangle'></span></th>
-	                                <th class='right-align' onclick="sortTable(2)">Quantity <span class='triangle'></span></th>
-	                                <th class='right-align' onclick="sortTable(3)">Total <span class='triangle'></span></th>
+	                                <th class='left-align'>Product <span class='triangle'></span></th>
+	                                <th class='right-align'>Unit Price <span class='triangle'></span></th>
+	                                <th class='right-align'>Quantity <span class='triangle'></span></th>
+	                                <th class='right-align'>Total <span class='triangle'></span></th>
                                     <th class='remove_cell'></th>
 	                            </tr>
 	                        </thead>
@@ -98,7 +103,8 @@
                 </div>
             </div>
             <div class="right_bck_footer">
-                <span class="icons_remove_order" onclick="toDeleteOrderClick()" title="Remove Order"></span>
+                <span class="icons_bookmark" id="bookmark" title="Bookmark"></span>
+                <span class="icons_remove_order" id="delete_order" title="Remove Order"></span>
                 <span class="icons_share"></span>
             </div>
         </div>
@@ -124,8 +130,7 @@
 
 </div>
 
-<script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script defer type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>

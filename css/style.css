@@ -127,7 +127,6 @@ body::before {
   width: 23px;
   border: none;
   background: url("../img/search.png") no-repeat;
-  background-size: 23px 20px;
   cursor: pointer;
 }
 
@@ -227,7 +226,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/white_plus.png") no-repeat;
-  background-size: 25px 25px;
   padding-right: 15px;
   cursor: pointer;
 }
@@ -237,7 +235,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/filter.png") no-repeat;
-  background-size: 25px 25px;
   padding-right: 15px;
   cursor: pointer;
 }
@@ -246,7 +243,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/select.png") no-repeat;
-  background-size: 30px 25px;
   cursor: pointer;
 }
 
@@ -337,38 +333,57 @@ body::before {
 .container .right_bck_section_middle .active .icons_line {
   border: 1px solid #417aa7;
 }
-.container .right_bck_section_middle .tools {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 10px 0px 10px;
-}
+
 .container .right_bck_section_middle .icons_car {
   width: 50px;
   height: 60px;
-  background-color: #417aa7;
   margin-bottom: 10px;
-  background: url("../img/car.png") no-repeat;
-  background-size: 53px 55px;
+  background: url("../img/ship.png") no-repeat;
+  cursor: pointer;
+}
+
+.container .right_bck_section_middle .tools {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 0 10px;
+}
+.container .right_bck_section_middle .active .icons_car {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 10px;
+  background: url("../img/ship_active.png") no-repeat;
   cursor: pointer;
 }
 
 .container .right_bck_section_middle .icons_map {
   width: 50px;
   height: 60px;
-  background-color: #417aa7;
   margin-bottom: 10px;
-  background: url("../img/info.png") no-repeat;
-  background-size: 50px 52px;
+  background: url("../img/map.png") no-repeat;
+  cursor: pointer;
+}
+
+.container .right_bck_section_middle .active .icons_map {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 10px;
+  background: url("../img/map_active.png") no-repeat;
   cursor: pointer;
 }
 
 .container .right_bck_section_middle .icons_customer {
   width: 50px;
   height: 60px;
-  background-color: #417aa7;
   margin-bottom: 10px;
-  background: url("../img/man.png") no-repeat;
-  background-size: 50px 47px;
+  background: url("../img/customer.png") no-repeat;
+  cursor: pointer;
+}
+
+.container .right_bck_section_middle .active .icons_customer {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 10px;
+  background: url("../img/customer_active.png") no-repeat;
   cursor: pointer;
 }
 
@@ -394,7 +409,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/edit.png") no-repeat;
-  background-size: 30px 25px;
   cursor: pointer;
   margin-left: 10px;
 }
@@ -475,7 +489,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/blue_plus.png") no-repeat;
-  background-size: 30px 25px;
   cursor: pointer;
 }
 
@@ -526,7 +539,7 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/blue_delete.png") no-repeat;
-  background-size: 30px 25px;
+  //background-size: 30px 25px;
   cursor: pointer;
 }
 
@@ -542,12 +555,35 @@ body::before {
   padding-right: 5px;
 }
 
+.container .right_bck_footer .icons_bookmark{
+  width: 30px;
+  height: 25px;
+  background-color: #417aa7;
+  background: url("../img/bookmark.png") no-repeat;
+  cursor: pointer;
+}
+
+.container .right_bck_footer .icons_bookmark{
+  width: 30px;
+  height: 25px;
+  background-color: #417aa7;
+  background: url("../img/bookmark.png") no-repeat;
+  cursor: pointer;
+}
+
+.container .right_bck_footer .icons_bookmark_active{
+  width: 30px;
+  height: 25px;
+  background-color: #417aa7;
+  background: url("../img/favourite.png") no-repeat;
+  cursor: pointer;
+}
+
 .container .right_bck_footer .icons_remove_order{
   width: 30px;
   height: 25px;
   background-color: #417aa7;
   background: url("../img/white_delete.png") no-repeat;
-  background-size: 30px 25px;
   cursor: pointer;
 }
 
@@ -556,7 +592,6 @@ body::before {
   height: 25px;
   background-color: #417aa7;
   background: url("../img/share.png") no-repeat;
-  background-size: 30px 25px;
   cursor: pointer;
 }
 
