@@ -15,14 +15,14 @@
         <div class="left_header">
             <div class="left_header_top">
                 <p><span class="icons_back"></span></p>
-                <p>Orders(10)</p>
+                <p class='orders_quantity'>Orders(10)</p>
             </div>
             <div class="left_header_bottom">
 
                 <form>
-                    <input type='text' name='search' placeholder='Поиск'>
-                    <input type="button" name="icons_search">
-                    <input type="button" name="icons_refresh">
+                    <input type='text' name='search' id='li_input' onkeyup="liSearch()" placeholder='Search'>
+                    <input type="button" name="icons_search" id='li_search'>
+                    <input type="button" name="icons_refresh" id='li_refresh' title='Refresh'>
                 </form>
                 
             </div>
@@ -30,84 +30,7 @@
         <div class="left_section">
             <div class="left_section_list">
                 <ul>
-                    <li>
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>In time</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="active">
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>Urgent</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>In time</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>In time</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>In time</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left_section_list_elem">
-                            <div class="left_section_list_elem_left">
-                                <p>Order 7991</p>
-                                <p>Berglunds snabbkop</p>
-                                <p>Shipped: 25 нояб. 2016 г.</p>
-                            </div>
-                            <div class="left_section_list_elem_right">
-                                <p>21.11.2016</p>
-                                <p>In time</p>
-                            </div>
-                        </div>
-                    </li>
+                	
                 </ul>
             </div>
         </div>
@@ -125,86 +48,51 @@
             <div class="right_bck_section">
                 <div class="right_bck_section_top">
                     <div class="right_bck_section_top_left">
-                        <p>Order 7918</p>
-                        <p>Customer: Tortuga Restaurante</p>
-                        <p>Ordered: 18.09.2016</p>
-                        <p>Shipped: 26 сент. 2016 г.</p>
+                        <p class="order_id">Order -</p>
+                        <p class = "customer">Customer: -</p>
+                        <p class = "createdAt">Ordered: -</p>
+                        <p class = "shippedAt">Shipped: -</p>
                     </div>
                     <div class="right_bck_section_top_right">
-                        <p>150 935,13</p>
+                        <p class='total_price'>0</p>
                         <p>EUR</p>
                     </div>
                 </div>
                 <div class="right_bck_section_middle">
-                    <div class="icons active">
-                        <span class="icons_car"></span>
+                    <div class="tools active">
+                        <span class="icons_car" title='Ship To'></span>
                         <span class="icons_line"></span>
                     </div>
-                    <div class="icons">
-                        <span class="icons_man"></span>
+                    <div class="tools">
+                        <span class="icons_customer" title='Customer Info'></span>
                         <span class="icons_line"></span>
                     </div>
                 </div>
                 <div class="right_bck_section_shipping">
-                    <p>Shipping adress</p>
+                    <p>Shipping address</p>
                     <div class='detail-info'>
-                        <div class='right-align color-gray'>
-                            <p>Name:</p>
-                            <p>Street:</p>
-                            <p>ZIP code / City:</p>
-                            <p>Region:</p>
-                            <p>Country:</p>
-                        </div>
-                        <div>
-                            <p>ExcellentParcel</p>
-                            <p>Tottenham Court Road</p>
-                            <p>N170AA London</p>
-                            <p>Greater London</p>
-                            <p>United Kingdom</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="right_bck_section_table">
                     <div class='table'>
-                        <p class='font-mid'> Line Items (4)</p>
-                        <table>
+                        <p class='tname font-mid'> Line Items (0)</p>
+                        <div class='tsearch'>
+                        <form>
+                    		<input type='text' name='search' id='t_input' onkeyup="tableSearch()" placeholder='Search' size='35'>
+               			</form>
+                    	</div>
+                        <table id='product_table'>
                             <thead>
-                            <tr class='thead'>
-                                <th class='left-align'>Product</th>
-                                <th class='right-align'>Unit Price</th>
-                                <th class='right-align'>Quantity</th>
-                                <th class='right-align'>Total</th>
-                            </tr>
-                            </thead>
+	                            <tr class='thead'>
+	                                <th class='left-align' onclick="sortTable(0)">Product <span class='triangle'></span></th>
+	                                <th class='right-align' onclick="sortTable(1)">Unit Price <span class='triangle'></span></th>
+	                                <th class='right-align' onclick="sortTable(2)">Quantity <span class='triangle'></span></th>
+	                                <th class='right-align' onclick="sortTable(3)">Total <span class='triangle'></span></th>
+	                            </tr>
+	                        </thead>
                             <tbody>
-                            <tr>
-                                <td><div><strong>Aniseed Syrup</strong></div>
-                                    <div>1412</div></td>
-                                <td class='right-align'><strong>65.89 </strong><span class='color-gray'>EUR</span></td>
-                                <td class='right-align'>899</td>
-                                <td class='right-align'><strong>59 235,11 </strong><span class='color-gray'>EUR</span></td>
-                            </tr>
-                            <tr>
-                                <td><div><strong>Tunnbrod</strong></div>
-                                    <div>5672</div></td>
-                                <td class='right-align'> <strong>14.77 </strong><span class='color-gray'>EUR</span></td>
-                                <td class='right-align'>2367</td>
-                                <td class='right-align'><strong>34 960,59 </strong><span class='color-gray'>EUR</span></td>
-                            </tr>
-                            <tr>
-                                <td><div><strong>Northwoods Cranberry Sauce</strong></div>
-                                    <div>5046</div></td>
-                                <td class='right-align'> <strong>61.69 </strong><span class='color-gray'>EUR</span></td>
-                                <td class='right-align'>867</td>
-                                <td class='right-align'><strong>53 485,23 </strong><span class='color-gray'>EUR</span></td>
-                            </tr>
-                            <tr>
-                                <td><div><strong>Camembert Pierrot</strong></div>
-                                    <div>9505</div></td>
-                                <td class='right-align'> <strong>3.07 </strong><span class='color-gray'>EUR</span></td>
-                                <td class='right-align'>1060</td>
-                                <td class='right-align'><strong>3 254,20 </strong><span class='color-gray'>EUR</span></td>
-                            </tr>
+                            	
                             </tbody>
                         </table>
                     </div>
@@ -217,6 +105,9 @@
 
     </div>
 </div>
+
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
