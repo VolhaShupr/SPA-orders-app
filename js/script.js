@@ -19,7 +19,6 @@ Utils.prototype.format = function(content, arr) {
     }
     return content;
 };
-
 var str = new Utils();
 
 /**
